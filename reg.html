@@ -7,10 +7,11 @@
 </head>
 <body>
     <form action="">
+        <h1>User Registration</h1>
+        <h2>Registration form</h2>
         
         <table>
-            <h1>User Registration</h1>
-            <h2>Registration form</h2>
+            
             <tr>
                 <th>Firstname:</th>
                 <td><input type="text" required minlength="3" placeholder="enter your Firstname"></td>
@@ -44,6 +45,7 @@
             <tr>
                 <th>State:</th>
                 <td><select name="" id="select1">
+                    <option value="">Select State</option>
                     <option value="kl">Kerala</option>
                     <option value="ap">Andhra Pradesh</option>
                     <option value="ar">Arunachal Pradesh</option>
@@ -80,7 +82,7 @@
             <tr>
                 <th>Pin Code:</th>
                 <td>
-                    <input type="number" name="pincode" pattern="[1-9][0-9]{5}" maxlength="6" minlength="6" inputmode="numeric" required>
+                    <input type="text" name="pincode" pattern="[1-9][0-9]{5}" maxlength="6" minlength="6" inputmode="numeric" required>
                 </td>
             </tr>
 
@@ -92,17 +94,17 @@
             </tr>
             <tr>
                 <th>Phone:</th>
-                <td><input type="number" pattern="[9,8,7,6]{10}" inputmode="numeric" required></td>
+                <td><input type="tel" name="phone" pattern="[6-9][0-9]{9}" maxlength="10" inputmode="numeric" required></td>
             </tr>
 
             <tr>
                 <th>Username:</th>
-                <td><input type="text" minlength="3" maxlength="10" pattern="[a-z A-Z]"></td>
+                <td><input type="text" minlength="3" maxlength="10" ></td>
             </tr>
             
             <tr>
                 <th>Password:</th>
-                <td><input type="password" minlength="8" maxlength="16" pattern="[A-Z][a-Z][!,@,#,$][0-9]"></td>
+                <td><input type="password" name="password" minlength="8" maxlength="16" required></td>
             </tr>
             <tr>
                 <td colspan="2"><button>Submit</button></td>
